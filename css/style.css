@@ -1,17 +1,11 @@
 .wrapper {
     margin: 32px auto;
-    max-width: 1000px;
+    max-width: 1024px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
-
-/* .wrapper {
-    margin: 32px auto;
-    max-width: 1000px;
-    display: grid;
-} */
 
 .input-wrapper {
     display: flex;
