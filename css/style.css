@@ -1,0 +1,19 @@
+.wrapper {
+    max-width: 1000px;
+}
+
+.gallery {
+    display: grid;
+    max-width: 1000px;
+}
+
+.search-box {
+    width: 300px;
+    height: 32px;
+    border: 2px solid #d1d3d6;
+    border-radius: 5px;
+    outline: none;
+    color: #828588;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
