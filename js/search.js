@@ -17,17 +17,15 @@ function searchBox() {
     let searchBox = document.getElementById('searchBox');
     let search = searchBox.value.toUpperCase();
     let gallery = document.getElementById('gallery');
-    let imgList = gallery.getElementsByTagName('img');
-    let img;
+    let aList = gallery.getElementsByTagName('a');
+    let a;
 
-    for (let i = 0; i < imgList.length; i++) {
-        img = imgList[i].alt;
-        if (img.toUpperCase().indexOf(search) > -1 ) {
-            imgList[i].parentElement.style.display = "";
+    for (let i = 0; i < aList.length; i++) {
+        a = aList[i].getAttribute('data-caption');
+        if (a.toUpperCase().indexOf(search) > -1 ) {
+            aList[i].style.display = "";
         } else {
-            imgList[i].parentElement.style.display = "none";
-            console.log(img.toUpperCase());
-            console.log(search);
+            aList[i].style.display = "none";
         }
     }
 }
